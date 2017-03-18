@@ -1,0 +1,24 @@
+{
+    "name": "root/projeto",
+    "authors": [
+        {
+            "name": "Raphael Moryta Suemasu",
+            "email": "raphael.moryta@gmail.com"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^6.1",
+        "phpunit/phpunit": "4.0.*"
+      },
+    "autoload": {
+        "psr-0":{
+            "Php\\Curso\\": "src/"
+        }
+    },
+    "scripts": {
+        "test:unit": "phpunit -c phpunit.xml tests/unit --coverage-html=./tests/phpunit"
+    },
+    "config":{
+        "bin-dir": "bin/"
+    }
+}
